@@ -25,7 +25,11 @@ var Mouse = {
          * Delay para que se terminen de cargar las imagenes
          * */
         setTimeout(function() {
-            Mouse.zone.style.height = Mouse.figures[0].childNodes[0].height + "px";
+            if (Mouse.figures[0].childNodes[0].height === 0) {
+                Mouse.zone.style.height = 1000 + "px";
+            } else {
+                Mouse.zone.style.height = Mouse.figures[0].childNodes[0].height + "px";
+            }
         }, 100)
     },
     mouseMove: function (event) {
