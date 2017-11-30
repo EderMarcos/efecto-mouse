@@ -1,0 +1,22 @@
+.no-margin {
+	margin: 0px !important;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+/*=============================================
+Efecto Mouse
+=============================================*/
+#mouse {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mouse figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
